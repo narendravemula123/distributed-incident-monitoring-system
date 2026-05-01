@@ -11,13 +11,18 @@ public class LogEvent {
     private Long id;
 
     private String serviceName;
-    private String level;
+
+    @Enumerated(EnumType.STRING)
+    private LogLevel level;
+
+    @Column(length = 1000)
     private String message;
+
     private LocalDateTime timestamp;
 
     public LogEvent() {}
 
-    public LogEvent(String serviceName, String level, String message) {
+    public LogEvent(String serviceName, LogLevel level, String message) {
         this.serviceName = serviceName;
         this.level = level;
         this.message = message;
@@ -26,11 +31,11 @@ public class LogEvent {
 
     public Long getId() { return id; }
     public String getServiceName() { return serviceName; }
-    public String getLevel() { return level; }
+    public LogLevel getLevel() { return level; }
     public String getMessage() { return message; }
     public LocalDateTime getTimestamp() { return timestamp; }
 
     public void setServiceName(String serviceName) { this.serviceName = serviceName; }
-    public void setLevel(String level) { this.level = level; }
+    public void setLevel(LogLevel level) { this.level = level; }
     public void setMessage(String message) { this.message = message; }
 }
