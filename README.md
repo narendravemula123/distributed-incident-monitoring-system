@@ -52,6 +52,7 @@ src/main/java/com/project/
 - controller/LogController.java
 - service/LogService.java
 - model/LogEvent.java
+- model/LogLevel.java
 - repository/LogRepository.java
 - MonitoringApplication.java
 ```
