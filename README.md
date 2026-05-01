@@ -49,14 +49,17 @@ This project was built to understand how modern distributed systems handle loggi
 
 ```
 src/main/java/com/project/
-- controller/LogController.java
-- service/LogService.java
-- model/LogEvent.java
-- model/LogLevel.java
-- repository/LogRepository.java
-- MonitoringApplication.java
+├── controller/
+│   └── LogController.java
+├── service/
+│   └── LogService.java
+├── model/
+│   ├── LogEvent.java
+│   └── LogLevel.java
+├── repository/
+│   └── LogRepository.java
+└── MonitoringApplication.java
 ```
-
 
 ## ▶️ Future Enhancements
 - Integrate Kafka for real-time log streaming  
