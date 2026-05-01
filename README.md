@@ -48,6 +48,7 @@ This project was built to understand how modern distributed systems handle loggi
 ## 📁 Project Structure
 
 src/main/java/com/project/
+
 - controller/LogController.java
 - service/LogService.java
 - model/LogEvent.java
